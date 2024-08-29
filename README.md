@@ -4,6 +4,8 @@
 
 This project is a **Vehicle Rental and Purchasing System** that allows users to rent or purchase vehicles through an intuitive and user-friendly web interface. The platform also enables users to sell their own vehicles, making it a comprehensive solution for vehicle transactions. The system is designed to handle various types of vehicles, with features to filter based on specific criteria such as make, model, and availability.
 
+This project was originally a task provided to by my university, but it was primitive and only back-end coded with java. I decided to create a front-end and integrate databases instead of using local files.
+
 The project was built using the following technologies:
 
 - **SQL:** To store and manage data related to vehicles, users, transactions, and more.
