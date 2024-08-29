@@ -11,6 +11,7 @@ The project was built using the following technologies:
 - **SQL:** To store and manage data related to vehicles, users, transactions, and more.
 - **HTML & CSS:** To structure and style the front-end of the application, ensuring a clean and responsive design.
 - **JavaScript:** To add interactivity and dynamic features to the user interface, such as form validation, dynamic content loading, and more.
+- **AWS:** To store images and host the website.
 
 ## What I've Learned So Far
 
@@ -35,6 +36,10 @@ Throughout the development process, I encountered various challenges that requir
 ### 5. Project Management
 
 Managing this project from start to finish taught me valuable lessons in time management, planning, and documentation. I learned how to break down tasks into manageable pieces, prioritize features, and maintain clear documentation for future reference.
+
+### 6. AWS
+
+I learned how to use AWS to host a static website using S3 bucket and cloudfront. I also utilized S3 to store images so they can be referenced by my database using their URL. This also helped me learn about computer networks and how to use the cloud.
 
 ## Next Steps
 
