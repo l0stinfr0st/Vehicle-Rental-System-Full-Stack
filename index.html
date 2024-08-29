@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental & Purchasing System</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head> 
+
+<body>
+    <header class="bar">
+        <nav class="main-nav">
+            <a href="#car-search">Car Search</a>
+            <a href="#your-garage">Your Garage</a>
+            <a href="#research-reviews">Research & Reviews</a>
+            <a href="#sell-your-car">Sell Your Car</a>
+            <a href="#Sign-In" class="sign" id="sign-in-btn">Sign In <i class="fas fa-user-circle"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="overlay-sign-in" id="overlay" style="visibility: hidden;">
+        <div class="modal1" id = "modal1" style="visibility: auto;">
+            <text class = "title">Log-in</text>
+            <div class = credentials1>
+                <input type ="emial1" class="em-field1" required placeholder="">                    
+                <label for = "email1" class="em-label1">Email</label>
+                <button class = "show-pass" id="show-btn"><i class="fas fa-eye-slash" id = "pass-vis"></i></button>
+                <input type = "password" class="pass1" required placeholder="">
+                <label for = "password1" class = "pass-label1">Password</label>
+                <button class = "log-in" id = "log-in">Log-in</button>
+                <label class="break"> ————————————————————————</label>
+                <button class = "create" id="create">Create new account</button>
+            </div>
+            <button type="exit" class="x" id="close-btn1"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal2" id = "modal2" style="visibility: hidden;">
+            <form class="form">
+                <text class = "title">Create an account</text>
+                <div class="credentials">
+                    <input type ="emial" class="em-field" required placeholder="">
+                    <label for = "email" class="em-label">Email</label>
+                    <button class = "show-pass2" id="show-btn2"><i class="fas fa-eye-slash" id = "pass-vis2"></i></button>
+                    <input type = "password" class="pass" required placeholder="">
+                    <label for = "password" class = "pass-label">Password</label>
+                </div>
+                <div class="names">
+                    <input type="text" class="First-Name" required placeholder="">
+                    <label for = "first" class = "First-label">First Name</label>
+                    <input type="text" class="Last-Name" required placeholder="">
+                    <label for = "last" class = "Last-label">Last Name</label>
+                </div>
+                <div class="address">
+                    <input type="text" class="Country-City" placeholder="">
+                    <label for = "Count" class = "Count-label">Country/City</label>
+                    <input type="text" class="Street-Address" placeholder="">
+                    <label for = "St" class = "St-label">Street Address</label>
+                    <input type="text" class="Postal-Coded" placeholder="">
+                    <label for = "Zip" class = "Zip-label">Zip Code</label>
+                    <input type="phone" class="num" placeholder="">
+                    <label for = "phone-label" class = "num-label">Phone Number</label>
+                </div>
+            </form>
+            <button type="back" class="back" id="back"><i class="fas fa-arrow-left"></i></button>
+            <button type="exit" class="x" id="close-btn2"><i class="fas fa-times"></i></button>
+            <button class="complete-sign-in-button" id = 'complete'>Complete your account</button>
+        </div>
+    </div>
+
+    <div class=gallery-container>
+        <div class="image-scroller">
+            <span class=spanner><img src="images/stock1.jpg" /></span>
+            <span class=spanner><img src="images/stock2.jpg" /></span>
+            <span class=spanner><img src="images/stock3.jpg" /></span>
+            <span class=spanner><img src="images/stock4.jpg" /></span>
+            <span class=spanner><img src="images/stock5.jpg" /></span>
+            <span class=spanner><img src="images/stock6.jpg" /></span>
+            <span class=spanner><img src="images/stock7.jpg" /></span>
+            <span class=spanner><img src="images/stock8.jpg" /></span>
+            <span class=spanner><img src="images/stock9.jpg" /></span>
+            <span class=spanner><img src="images/stock10.jpg" /></span>
+            <span class=spanner><img src="images/stock11.jpg" /></span>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <form class="search-form">
+            <div>
+                <text class=make-text>Make</text>
+                <select name="make" id="make" class=makes>
+                    <option value="">All makes</option>
+                </select>
+            </div>
+            <div>
+                <text class=model-text>Model</text>
+                <select name="model" id="model" class=models>
+                    <option value="">All models</option>
+                </select>
+            </div>
+            <div>
+                <text class=year-text>Year</text>
+                <select name="year" id="year" class=years>
+                    <option value="">Any year</option>
+                </select>
+            </div>
+            <div>
+                <text class=mileage-text>Mileage</text>
+                <select name="mileage" id="mileage" class=mileages>
+                    <option value="">Any mileage</option>
+                    <option value="">0-50000 km</option>
+                    <option value="">50000-100000 km</option>
+                    <option value="">100000-200000 km</option>
+                    <option value="">200000-400000 km</option>
+                    <option value="">400000+ km</option>
+                </select>
+            </div>
+            <button type="submit" class="search-button">Search</button>
+        </form>
+    </div>
+
+    <script src=dropdown.js></script>
+    <script src=gallery.js></script>
+    <script src="sign-in-functions.js"></script>
+    <script src="server.js"></script>
+</body>
+
+</html>
